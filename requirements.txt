@@ -1,4 +1,2 @@
 streamlit
-fastai==2.5.3
-plotly==5.5.0
-pillow==8.4.0
+fastai
