@@ -1,7 +1,6 @@
 import streamlit as st
 from fastai.vision.all import *
 import pathlib
-import plotly.express as px
 import platform
 
 plt = platform.system()
@@ -25,6 +24,3 @@ if file:
     st.success(f"Bashorat: {pred}")
     st.info(f'Ehtimollik: {probs[pred_id]*100:.1f}%')
 
-    # plotting
-    fig=px.bar(x=probs*100, y=model.dls.vocab)
-    st.plotly_chart(fig)
