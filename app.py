@@ -13,7 +13,7 @@ st.title("Telefon, yo'l belgisi va soatni klassifikatsiya qiluvchi model")
 
 
 # rasmni joylash
-file = st.file_uploader('Rasm yuklash', type=['png', 'jpeg', 'gif', 'svg'])
+file = st.file_uploader('Rasm yuklash', type=['png', 'jpeg', 'jpg', 'gif', 'svg'])
 if file:
     st.image(file)
     # PIL convert
